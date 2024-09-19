@@ -1,0 +1,221 @@
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>portfolio</title>
+  <link rel="stylesheet" href="css/styles.css">
+   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.1/css/all.css">
+
+</head>
+<body>
+  <div class="wrapper">
+    <header>
+      <nav class="navbar">
+        <div class="brand">
+          <h2>J<span>J</span></h2>
+        </div>
+        <ul class="menu">
+          <li><a href="#home" class="active">Home</a></li>
+          <li><a href="#about">About me</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main" id="home">
+      <div class="info-content">
+        <h1><span>I'm </span> Juan José Pérez</h1>
+         <p>Mechatronics Engineer specializing in the design, development, and implementation of automated systems. With a strong background in control systems, electronics, and robotics, I have gained experience in developing AI projects and analyzing large datasets. Seeking to apply my knowledge in the industrial and research sectors</p>
+         <a href="https://drive.google.com/uc?export=download&id=10nYJb2A5-MQi_uW7Kef6I_GE5tvLN9VP" download="CV_Juan_Jose_Perez.pdf">
+          <button class="download-cv">Download CV</button>
+        </a>
+      </div>
+      <img src="/img/foto_portafolio_inicio.png" alt="">
+    </main>
+  </div>
+    <div class="about" id="about">
+      <img src="/img/foto_portafolio_about.jpg" alt="">
+      <div class="about-info">
+        <h2>About me</h2>
+        <div class="divider"></div>
+        <p>I am a Mechatronics Engineering student with a strong interest in data science, industrial automation, IoT system design, and programming languages such as Python, Java, and C++. Throughout my academic training, I have developed skills in using CAD tools and software like SolidWorks and in the implementation and integration of hardware in complex systems.</p>
+        <p> Additionally, I possess strong abilities in solving technical problems through innovative solutions. I am seeking an opportunity to apply my knowledge in a professional environment while continuing to grow in the evolving field of engineering.</p>
+        
+        <!-- Checkbox que controlará la visibilidad -->
+        <input type="checkbox" id="toggle-columns" style="display: none;">
+        
+        <!-- El label actuará como el botón -->
+        <label for="toggle-columns" class="read-more">Read more</label>
+      
+        <!-- Cuadro con las columnas que se mostrará u ocultará -->
+        <div id="skills-competencies">
+          <div class="columns-container">
+            <div class="column">
+              <h3>SKILLS:</h3>
+              <ul>
+                <li>Teamwork</li>
+                <li>Work under pressure</li>
+                <li>Project resolution</li>
+                <li>Digital skills</li>
+                <li>Assertive communication</li>
+                <li>Organization</li>
+              </ul>
+            </div>
+            <div class="column">
+              <h3>COMPETENCIES:</h3>
+              <ul>
+                <li>C++</li>
+                <li>JavaScript</li>
+                <li>SolidWorks</li>
+                <li>TIA Portal</li>
+                <li>Python</li>
+                <li>Matlab</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="portfolio" id="portfolio">
+      <div class="portfolio-heading">
+        <h2>My Portfolio</h2>
+        <div class="divider"></div>
+      </div>
+      <div class="container">
+        <!-- Primera tarjeta -->
+        <div class="card">
+          <div class="card__img"></div>
+          <div class="card__title">
+            <h2>Rover Resilience</h2>
+          </div>
+          <div class="card__proyect-links">
+            <a href="https://www.youtube.com/watch?v=yYr8j3TJqOY" target="_blank">
+              <i class="fab fa-youtube"></i>
+            </a>
+            <a href="https://rover-resilience.web.app/index.html" target="_blank">
+              <i class="fas fa-globe-americas"></i>
+            </a>
+            <a href="https://github.com/juanjp30/Resilience_Juan_Jose.git" target="_blank">
+              <i class="fab fa-github"></i>
+            </a>
+          </div>
+
+          <!-- Checkbox único para controlar el contenido -->
+          <input type="checkbox" id="toggle-details-1" style="display: none;">
+          
+          <!-- Label que actúa como botón -->
+          <label for="toggle-details-1" class="project-details-button download-cv">
+            Project Details
+          </label>
+
+          <!-- Contenido que se mostrará/ocultará -->
+          <div id="project-details-content-1" class="project-details-content">
+            <p>Resilience was an interdisciplinary academic team dedicated to creating an autonomous rover with advanced detection and energy management systems for planetary exploration missions. The project focused on developing an adaptable vehicle with modular interfaces and the ability to incorporate technological upgrades, ensuring long-term performance.</p>
+          </div>
+        </div>
+
+                <!-- Segunda tarjeta -->
+        <div class="card">
+          <div class="card__img" style="background-image: url('/img/Vertebra_Raton.png');"></div>
+          <div class="card__title">
+            <h2>Vertebra Mouse</h2>
+          </div>
+          <div class="card__proyect-links">
+            <a href="https://www.youtube.com/watch?v=example" target="_blank">
+              <i class="fab fa-youtube"></i>
+            </a>
+            <a href="https://vertebra-mouse.web.app" target="_blank">
+              <i class="fas fa-globe-americas"></i>
+            </a>
+            <a href="https://github.com/juanjp30/Vertebra_Mouse.git" target="_blank">
+              <i class="fab fa-github"></i>
+            </a>
+          </div>
+
+          <!-- Checkbox único para controlar el contenido -->
+          <input type="checkbox" id="toggle-details-2" style="display: none;">
+          
+          <!-- Label que actúa como botón -->
+          <label for="toggle-details-2" class="project-details-button download-cv">
+            Project Details
+          </label>
+
+          <!-- Contenido que se mostrará/ocultará -->
+          <div id="project-details-content-2" class="project-details-content">
+            <p>An analysis was conducted in ANSYS to determine the impact force required to fracture the spinal cord in a mouse's vertebral column. This study considered all relevant physical and biological parameters, allowing for precise results regarding the threshold of resistance in the vertebral structure.</p>
+          </div>
+        </div>
+
+                <!-- Tercera tarjeta -->
+        <div class="card">
+          <div class="card__img" style="background-image: url('/img/CI_Kinova.jpg');"></div> <!-- Cambia la ruta de la imagen -->
+          <div class="card__title">
+            <h2>IK Kinova</h2> <!-- Cambia el título del proyecto -->
+          </div>
+          <div class="card__proyect-links">
+            <a href="https://www.youtube.com/watch?v=example" target="_blank">
+              <i class="fab fa-youtube"></i>
+            </a>
+            <a href="https://third-project.web.app" target="_blank">
+              <i class="fas fa-globe-americas"></i>
+            </a>
+            <a href="https://github.com/juanjp30/IK_KINOVA_GEN3_LITE.git" target="_blank">
+              <i class="fab fa-github"></i>
+            </a>
+          </div>
+
+          <!-- Checkbox único para controlar el contenido -->
+          <input type="checkbox" id="toggle-details-3" style="display: none;">
+          
+          <!-- Label que actúa como botón -->
+          <label for="toggle-details-3" class="project-details-button download-cv">
+            Project Details
+          </label>
+
+          <!-- Contenido que se mostrará/ocultará -->
+          <div id="project-details-content-3" class="project-details-content">
+            <p>In a practical session, the inverse kinematics for a Kinova robotic arm were successfully calculated. This involved determining the precise joint angles needed to position the end effector at specified coordinates. The task required solving nonlinear equations while considering the robot’s degrees of freedom and joint limitations. The implementation was carried out smoothly, resulting in accurate control of the robotic arm's movements.</p>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  
+    <div class="contact-section" id="contact">
+      <div class="contact-heading">
+        <h2>Get in touch</h2>
+        <div class="divider"></div>
+      </div>
+      <div class="container-contact">
+        <img src="/img/foto_portafolio_contact.png" alt="">
+        <div class="contact-form">
+          <h4>Send me a message...</h4>
+          <form action="https://formspree.io/f/mdknrove" method="POST" class="form-group">
+            <input type="text" name="name" placeholder="Name" class="input" required>
+            <input type="email" name="email" placeholder="Email" class="input" required>
+            <textarea name="message" placeholder="Place your message here..." required></textarea>
+            <button type="submit" class="btn-submit">Send message</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  
+    <footer class="footer"> 
+      <div class="footer-content">
+        <h2>Juan José Pérez Carrascal</h2>
+        <h5>Mechatronic Engineer</h5>
+      </div>
+      <div class="sotial-networks">
+        <a href="https://www.instagram.com/juanjperez__/" target="_blank">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/juan-jose-perez-carrascal-/" target="_blank">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="https://www.facebook.com/juanjose.perezcarrascal/" target="_blank">
+          <i class="fab fa-facebook"></i>
+        </a>
+      </div>
+    </footer>
+  </body>

@@ -1,0 +1,535 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.wrapper {
+  width: 100vw;
+  height: 100vh;
+  background-color: #1a1a1a;
+  color: #fff;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 1em 2em; /* Ajusta el padding si es necesario */
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #1a1a1a; /* Asegura que la barra tenga fondo */
+  z-index: 1000; /* Asegura que la barra esté por encima del contenido */
+  border: 2px solid #000;
+}
+
+.brand {
+  margin-top: -7px;
+}
+
+.brand span {
+  color: #dc143c;
+}
+.menu {
+  display: flex;
+  width: 50%;
+  justify-content: space-around;
+}
+
+.menu  li {
+  list-style: none;
+}
+
+.menu a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 20px; 
+  font-weight: 600;
+}
+
+.menu li:hover a{
+  background-color: #dc143c;
+  color: #1a1a1a;
+  font-weight: 600;
+}
+
+.menu .active {
+  color: #dc143c;
+ 
+}
+
+
+.menu li a:hover {
+  color: #1a1a1a;
+}
+
+.main {
+  padding: 120px;
+  margin: 0 auto;
+  width: 90vw;
+  height: 80vh;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  align-items: center;
+  gap: 2em;
+}
+
+h1 {
+  font-size: 3em;
+}
+
+.info-content span {
+  color: #dc143c;
+}
+
+.download-cv {
+  padding: 10px 20px;
+  background-color: #dc143c;
+  border: none;
+  border-radius: 20px;
+  margin-top: 10px;
+  cursor: pointer;
+  -webkit-box-shadow: 1px 3px 11px -5px #dc143c;
+  -moz-box-shadow: 1px 3px 11px -5px #dc143c;
+  box-shadow: 1px 3px 11px -5px #dc143c;
+}
+
+.download-cv:hover {
+  background-color: azure;
+  box-shadow: none;
+}
+
+.main img {
+  border:  7px solid #dc143c;
+  width: 350px;
+  height: 520px;
+  z-index: 1;
+}
+
+.about {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  width: 100vw;
+  align-items: center;
+}
+
+.about img {
+  width: 100%;
+  grid-column: 1/5;
+}
+
+.about-info {
+  grid-column: 5/10;
+  padding: 3em;
+}
+
+.about-info h2 {
+  font-size: 2em;
+  color: #1a1a1a;
+}
+
+.divider {
+  height: 4px;
+  width: 60px;
+  background-color: #dc143c;
+  margin-top: 5px;
+  margin-bottom: 2em;
+}
+
+.about p {
+  margin-bottom: 1em;
+  font-weight: 600;
+  color: #1a1a1a7d;
+  margin-bottom: 2em;
+}
+
+.read-more {
+  padding: 10px 20px;
+  font-weight: 600;
+  background-color: #dc143c;
+  border: none;
+  border-radius: 20px;
+  margin-top: 10px;
+  cursor: pointer;
+  -webkit-box-shadow: 1px 3px 11px -5px #dc143c;
+  -moz-box-shadow: 1px 3px 11px -5px #dc143c;
+  box-shadow: 1px 3px 11px -5px #dc143c;
+}
+
+.read-more:hover {
+  background-color: #1a1a1a;
+  color: #fff;
+  box-shadow: none;
+}
+
+#skills-competencies {
+  display: none;  /* Ocultamos el cuadro por defecto */
+}
+
+#toggle-columns:checked + label + #skills-competencies {
+  display: block;  /* Mostramos el cuadro cuando el checkbox está marcado */
+}
+
+#toggle-details-3:checked ~ .project-details-content {
+  display: block;
+}
+
+.columns-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.column {
+  width: 45%;
+}
+
+.column h3 {
+  font-size: 1.5em;
+  color: #dc143c;
+}
+
+.column ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.column li {
+  margin-bottom: 10px;
+  font-weight: 600;
+  color: #1a1a1a7d; /* O el color que prefieras */
+}
+
+.portfolio,
+.contact-section {
+  width: 100vw;
+  background-color: #1a1a1a;
+  color: #fff;
+}
+
+.portfolio-heading {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+
+
+.portfolio-heading h2,
+.contact-heading h2 {
+  
+  font-size: 2.5em;
+  color: #fff;
+}
+
+.portfolio .container {
+  width: 80vw;
+  height: 80vh;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  width: 300px;
+  background-color: #2d0408a2;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+.card:first-child .card__img {
+  background-image: url('/img/Resilience_Rover.jpg');  /* Cambia la imagen */
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 150px;
+}
+
+.card:nth-child(2) .card__img {
+  background-image: url('/img/Vertebra_Raton.png');
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 150px;
+}
+
+.card:nth-child(3) .card__img {
+  background-image: url('/img/CI_Kinova.jpg'); /* Cambia la ruta de la imagen */
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 150px;
+}
+
+.card__proyect-links {
+  display: flex;
+  justify-content: space-around; /* Asegura que los íconos estén espaciados */
+  margin: 10px 0; /* Ajusta el espaciado vertical */
+}
+
+.card__proyect-links a {
+  margin: 0 10px; /* Agrega espacio horizontal entre los íconos */
+  color: #fff;
+  text-decoration: none;
+}
+
+.card__proyect-links i {
+  font-size: 1.5em;
+}
+
+.button-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px; /* Ajusta según sea necesario */
+}
+
+.project-details-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #dc143c;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  color: #fff;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  box-shadow: 1px 3px 11px -5px #dc143c;
+  margin: 0; /* Elimina márgenes */
+}
+
+.project-details-button:hover {
+  background-color: #ffffff;
+  color: #dc143c;
+}
+
+/* Ajusta el contenido que se muestra cuando el checkbox está marcado */
+.project-details-content {
+  display: none;
+  margin-top: 10px;
+  font-size: 1em;
+  padding: 10px 20px;
+  color: #1a1a1a7d;
+  font-weight: 600;
+  background-color: #fff;
+  border-radius: 20px;
+  text-transform: uppercase;
+}
+
+#toggle-details-1:checked ~ .project-details-content,
+#toggle-details-2:checked ~ .project-details-content {
+  display: block;
+}
+
+.project-details-button a {
+  text-decoration: none;
+  color: #1a1a1a;
+}
+
+
+.contact-section {
+  padding: 3em;
+}
+
+.container-contact {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+
+.contact-section img {
+  width: 750px;
+  height: 700px;
+  bottom: 0px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  width: 30vw;
+  margin-top: 2em;
+}
+.form-group textarea {
+  height: 150px;
+  padding: 1.5em;
+  background: none;
+  border: 1px solid #fff;
+  color: #fff;
+}
+
+.form-group .input {
+  padding: 10px 20px;
+  margin-bottom: 1em;
+  background: none;
+  border: none;
+  border-bottom: 1px solid #fff;
+  color: #fff;
+}
+
+.form-group .btn-submit {
+  padding: 10px 20px;
+  margin: 1em;
+  border-radius: 20px;
+  border: none;
+  text-transform: uppercase;
+  background-color: #dc143c;
+}
+
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 200px;
+  padding: 2em;
+  background-color: #dc143c;
+}
+
+.footer-content h2 {
+  font-size: 3em;
+}
+
+.footer-content h5 {
+  font-size: 1.5em;
+  text-align: center;
+}
+
+.sotial-networks {
+  display: flex;
+  justify-content: space-evenly;
+  width: 300px;
+  margin-top: 1em;
+}
+
+.sotial-networks i {
+  font-size: 1.5em;
+}
+
+.portfolio,
+.contact-section {
+  width: 100vw;
+  background-color: #1a1a1a;
+  color: #fff;
+}
+
+.portfolio-heading {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 5em;
+}
+
+
+.portfolio-heading h2,
+.contact-heading h2 {
+  font-size: 2.5em;
+  color: #fff;
+}
+
+.contact-section {
+  padding: 3em;
+}
+
+.container-contact {
+  display: flex;
+  flex-wrap: wrap; /* Permitir que los elementos se ajusten si no hay espacio */
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin: 0 auto;
+  padding: 2em;
+}
+
+.contact-section img {
+  width: 100%;  /* Ajusta el ancho para que sea un poco más grande */
+  height: auto; /* Mantén la proporción de la imagen */
+  max-width: 600px; /* Limita el tamaño máximo */
+  margin-top: 0;  /* Elimina cualquier margen superior */
+}
+
+.contact-form {
+  flex: 1; /* Hace que el formulario ocupe el espacio restante */
+  margin-left: 20px; /* Aumenta el margen entre la imagen y el formulario */
+}
+
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  width: 30vw;
+  margin-top: 2em;
+}
+.form-group textarea {
+  height: 150px;
+  padding: 1.5em;
+  background: none;
+  border: 1px solid #fff;
+  color: #fff;
+}
+
+.form-group .input {
+  padding: 10px 20px;
+  margin-bottom: 1em;
+  background: none;
+  border: none;
+  border-bottom: 1px solid #fff;
+  color: #fff;
+}
+
+.form-group .btn-submit {
+  padding: 10px 20px;
+  margin: 1em;
+  border-radius: 20px;
+  border: none;
+  text-transform: uppercase;
+  background-color: #dc143c;
+}
+
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 200px;
+  padding: 2em;
+  background-color: #dc143c;
+}
+
+.footer-content h2 {
+  font-size: 3em;
+}
+
+.footer-content h5 {
+  font-size: 1.5em;
+  text-align: center;
+}
+
+.sotial-networks {
+  display: flex;
+  justify-content: space-evenly;
+  width: 300px;
+  margin-top: 1em;
+}
+
+.sotial-networks i {
+  font-size: 1.5em;
+}
