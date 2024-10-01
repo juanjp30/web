@@ -228,14 +228,26 @@ h1 {
   color: #fff;
 }
 
-.portfolio .container {
-  width: 80vw;
-  height: 80vh;
-  margin: 0 auto;
+.portfolio-container {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  justify-content: center; /* Centra las columnas horizontalmente */
+  width: 90vw;
+  margin: 0 auto;
+  gap: 2em; /* Espacio entre las columnas */
+  flex-wrap: wrap; /* Permitir que se ajuste en pantallas más pequeñas */
 }
+
+.portfolio-left, .portfolio-middle, .portfolio-right, .portfolio-automation {
+  flex-basis: 22%; /* Ajusta el ancho de cada columna al 22% del contenedor */
+}
+
+.portfolio-left h3, .portfolio-middle h3, .portfolio-right h3, .portfolio-automation h3 {
+  color: #dc143c;
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 1em;
+}
+
 
 .card {
   display: flex;
@@ -251,7 +263,7 @@ h1 {
 
 
 .card:first-child .card__img {
-  background-image: url('img/Vertebra_Raton.png');
+  background-image: url('/img/Resilience_Rover.jpg');  /* Cambia la imagen */
   background-size: cover;
   background-position: center;
   width: 100%;
@@ -259,7 +271,7 @@ h1 {
 }
 
 .card:nth-child(2) .card__img {
-  background-image: url('img/Vertebra_Raton.png');
+  background-image: url('/img/Vertebra_Raton.png');
   background-size: cover;
   background-position: center;
   width: 100%;
@@ -267,7 +279,7 @@ h1 {
 }
 
 .card:nth-child(3) .card__img {
-  background-image: url('img/CI_Kinova.jpg'); /* Cambia la ruta de la imagen */
+  background-image: url('/img/CI_Kinova.jpg'); /* Cambia la ruta de la imagen */
   background-size: cover;
   background-position: center;
   width: 100%;
@@ -318,6 +330,7 @@ h1 {
 }
 
 /* Ajusta el contenido que se muestra cuando el checkbox está marcado */
+/* Por defecto ocultamos los detalles del proyecto */
 .project-details-content {
   display: none;
   margin-top: 10px;
@@ -330,8 +343,15 @@ h1 {
   text-transform: uppercase;
 }
 
-#toggle-details-1:checked ~ .project-details-content,
-#toggle-details-2:checked ~ .project-details-content {
+/* Mostramos los detalles del proyecto cuando el checkbox está marcado */
+#toggle-details-1:checked ~ #project-details-content-1,
+#toggle-details-2:checked ~ #project-details-content-2,
+#toggle-details-3:checked ~ #project-details-content-3,
+#toggle-details-4:checked ~ #project-details-content-4,
+#toggle-details-5:checked ~ #project-details-content-5,
+#toggle-details-new-robotics:checked ~ #project-details-content-new-robotics,
+#toggle-details-new-data-science:checked ~ #project-details-content-new-data-science,
+#toggle-details-new-automation:checked ~ #project-details-content-new-automation {
   display: block;
 }
 
