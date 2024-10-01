@@ -30,11 +30,11 @@
           <button class="download-cv">Download CV</button>
         </a>
       </div>
-      <img src="img/foto_portafolio_inicio.png" alt="">
+      <img src="/img/foto_portafolio_inicio.png" alt="">
     </main>
   </div>
     <div class="about" id="about">
-      <img src="img/foto_portafolio_about.jpg" alt="">
+      <img src="/img/foto_portafolio_about.png" alt="">
       <div class="about-info">
         <h2>About me</h2>
         <div class="divider"></div>
@@ -81,114 +81,221 @@
         <h2>My Portfolio</h2>
         <div class="divider"></div>
       </div>
-      <div class="container">
-        <!-- Primera tarjeta -->
-        <div class="card">
-          <div class="card__img"></div>
-          <div class="card__title">
-            <h2>Rover Resilience</h2>
+      <div class="portfolio-container">
+        <!-- Sección de Mecánica -->
+        <div class="portfolio-left">
+          <h3>Design</h3>
+          <!-- Tarjeta Rover Resilience -->
+          <div class="card">
+            <div class="card__img" style="background-image: url('/img/Resilience_Rover.png');"></div>
+            <div class="card__title">
+              <h2>Rover Resilience</h2>
+            </div>
+            <div class="card__proyect-links">
+              <a href="https://www.youtube.com/watch?v=yYr8j3TJqOY" target="_blank">
+                <i class="fab fa-youtube"></i>
+              </a>
+              <a href="https://rover-resilience.web.app/index.html" target="_blank">
+                <i class="fas fa-globe-americas"></i>
+              </a>
+              <a href="https://github.com/juanjp30/Resilience_Juan_Jose.git" target="_blank">
+                <i class="fab fa-github"></i>
+              </a>
+            </div>
+            <input type="checkbox" id="toggle-details-1" style="display: none;">
+            <label for="toggle-details-1" class="project-details-button download-cv">
+              Project Details
+            </label>
+            <div id="project-details-content-1" class="project-details-content">
+              <p>Resilience was an interdisciplinary academic team dedicated to creating an autonomous rover with advanced detection and energy management systems for planetary exploration missions. The project focused on developing an adaptable vehicle with modular interfaces and the ability to incorporate technological upgrades, ensuring long-term performance.</p>
+            </div>
           </div>
-          <div class="card__proyect-links">
-            <a href="https://www.youtube.com/watch?v=yYr8j3TJqOY" target="_blank">
-              <i class="fab fa-youtube"></i>
-            </a>
-            <a href="https://rover-resilience.web.app/index.html" target="_blank">
-              <i class="fas fa-globe-americas"></i>
-            </a>
-            <a href="https://github.com/juanjp30/Resilience_Juan_Jose.git" target="_blank">
-              <i class="fab fa-github"></i>
-            </a>
-          </div>
-
-          <!-- Checkbox único para controlar el contenido -->
-          <input type="checkbox" id="toggle-details-1" style="display: none;">
-          
-          <!-- Label que actúa como botón -->
-          <label for="toggle-details-1" class="project-details-button download-cv">
-            Project Details
-          </label>
-
-          <!-- Contenido que se mostrará/ocultará -->
-          <div id="project-details-content-1" class="project-details-content">
-            <p>Resilience was an interdisciplinary academic team dedicated to creating an autonomous rover with advanced detection and energy management systems for planetary exploration missions. The project focused on developing an adaptable vehicle with modular interfaces and the ability to incorporate technological upgrades, ensuring long-term performance.</p>
-          </div>
-        </div>
-
-                <!-- Segunda tarjeta -->
-        <div class="card">
-          <div class="card__img" style="background-image: url('img/Vertebra_Raton.png');"></div>
-          <div class="card__title">
-            <h2>Vertebra Mouse</h2>
-          </div>
-          <div class="card__proyect-links">
-            <a href="https://www.youtube.com/watch?v=example" target="_blank">
-              <i class="fab fa-youtube"></i>
-            </a>
-            <a href="https://vertebra-mouse.web.app" target="_blank">
-              <i class="fas fa-globe-americas"></i>
-            </a>
-            <a href="https://github.com/juanjp30/Vertebra_Mouse.git" target="_blank">
-              <i class="fab fa-github"></i>
-            </a>
-          </div>
-
-          <!-- Checkbox único para controlar el contenido -->
-          <input type="checkbox" id="toggle-details-2" style="display: none;">
-          
-          <!-- Label que actúa como botón -->
-          <label for="toggle-details-2" class="project-details-button download-cv">
-            Project Details
-          </label>
-
-          <!-- Contenido que se mostrará/ocultará -->
-          <div id="project-details-content-2" class="project-details-content">
-            <p>An analysis was conducted in ANSYS to determine the impact force required to fracture the spinal cord in a mouse's vertebral column. This study considered all relevant physical and biological parameters, allowing for precise results regarding the threshold of resistance in the vertebral structure.</p>
+    
+          <!-- Tarjeta Vertebra Mouse -->
+          <div class="card">
+            <div class="card__img" style="background-image: url('/img/Vertebra_Raton.png');"></div>
+            <div class="card__title">
+              <h2>Mouse Vertebra</h2>
+            </div>
+            <div class="card__proyect-links">
+              <a href="https://vertebra-mouse.web.app" target="_blank">
+                <i class="fas fa-globe-americas"></i>
+              </a>
+              <a href="https://github.com/juanjp30/Vertebra_Mouse.git" target="_blank">
+                <i class="fab fa-github"></i>
+              </a>
+            </div>
+            <input type="checkbox" id="toggle-details-2" style="display: none;">
+            <label for="toggle-details-2" class="project-details-button download-cv">
+              Project Details
+            </label>
+            <div id="project-details-content-2" class="project-details-content">
+              <p>One analysis was conducted in ANSYS to determine the impact force required to fracture the spinal cord in a mouse's vertebral column. This study considered all relevant physical and biological parameters, allowing for precise results regarding the threshold of resistance in the vertebral structure.</p>
+            </div>
           </div>
         </div>
-
-                <!-- Tercera tarjeta -->
-        <div class="card">
-          <div class="card__img" style="background-image: url('img/CI_Kinova.jpg');"></div> <!-- Cambia la ruta de la imagen -->
-          <div class="card__title">
-            <h2>IK Kinova</h2> <!-- Cambia el título del proyecto -->
+    
+        <div class="portfolio-middle">
+          <h3>Virtual Reality</h3>
+          <!-- Tarjeta IK Kinova -->
+          <div class="card">
+            <div class="card__img" style="background-image: url('/img/Anaglifo.png');"></div>
+            <div class="card__title">
+              <h2>Anaglyph Filtering</h2>
+            </div>
+            <div class="card__proyect-links">
+              <a href="https://third-project.web.app" target="_blank">
+                <i class="fas fa-globe-americas"></i>
+              </a>
+              <a href="https://github.com/juanjp30/Anaglyph-Filtering" target="_blank">
+                <i class="fab fa-github"></i>
+              </a>
+            </div>
+            <input type="checkbox" id="toggle-details-3" style="display: none;">
+            <label for="toggle-details-3" class="project-details-button download-cv">
+              Project Details
+            </label>
+            <div id="project-details-content-3" class="project-details-content">
+              <p>This project focused on the analysis of 3D images, where techniques such as wavelength filtering (anaglyph) and spatial displacement were applied, including the side-by-side method for parallel and cross vision, as well as the top-down format. These techniques enabled the creation and visualization of three-dimensional images, providing an immersive experience in visual analysis.</p>
+            </div>
           </div>
-          <div class="card__proyect-links">
-            <a href="https://www.youtube.com/watch?v=example" target="_blank">
-              <i class="fab fa-youtube"></i>
-            </a>
-            <a href="https://third-project.web.app" target="_blank">
-              <i class="fas fa-globe-americas"></i>
-            </a>
-            <a href="https://github.com/juanjp30/IK_KINOVA_GEN3_LITE.git" target="_blank">
-              <i class="fab fa-github"></i>
-            </a>
-          </div>
-
-          <!-- Checkbox único para controlar el contenido -->
-          <input type="checkbox" id="toggle-details-3" style="display: none;">
-          
-          <!-- Label que actúa como botón -->
-          <label for="toggle-details-3" class="project-details-button download-cv">
-            Project Details
-          </label>
-
-          <!-- Contenido que se mostrará/ocultará -->
-          <div id="project-details-content-3" class="project-details-content">
-            <p>In a practical session, the inverse kinematics for a Kinova robotic arm were successfully calculated. This involved determining the precise joint angles needed to position the end effector at specified coordinates. The task required solving nonlinear equations while considering the robot’s degrees of freedom and joint limitations. The implementation was carried out smoothly, resulting in accurate control of the robotic arm's movements.</p>
+        
+          <!-- Nueva Tarjeta Robotics -->
+          <div class="card">
+            <div class="card__img" style="background-image: url('/img/Planta_Arroz.png');"></div>
+            <div class="card__title">
+              <h2>Rice Factory</h2>
+            </div>
+            <div class="card__proyect-links">
+              <a href="https://materialistic-worried-golf.glitch.me/" target="_blank">
+                <i class="fas fa-globe-americas"></i>
+              </a>
+              <a href="https://github.com/juanjp30/Rice-Factory" target="_blank">
+                <i class="fab fa-github"></i>
+              </a>
+            </div>
+            <input type="checkbox" id="toggle-details-new-robotics" style="display: none;">
+            <label for="toggle-details-new-robotics" class="project-details-button download-cv">
+              Project Details
+            </label>
+            <div id="project-details-content-new-robotics" class="project-details-content">
+              <p>This proposal was developed with the aim of providing an immersive virtual environment of a rice production plant using AFrame. With this tool, the goal is to offer an interactive and realistic representation of the production process, facilitating the understanding and visualization of each stage within a three-dimensional environment.</p>
+            </div>
           </div>
         </div>
-
-
+        
+    
+        <!-- Sección de Python -->
+        <div class="portfolio-right">
+          <h3>Data Science</h3>
+          <!-- Tarjeta Python -->
+          <div class="card">
+            <div class="card__img" style="background-image: url('/img/database.png');"></div>
+            <div class="card__title">
+              <h2>Database</h2>
+            </div>
+            <div class="card__proyect-links">
+              <a href="https://www.example.com" target="_blank">
+                <i class="fas fa-globe-americas"></i>
+              </a>
+              <a href="https://github.com/juanjp30/Database" target="_blank">
+                <i class="fab fa-github"></i>
+              </a>
+            </div>
+            <input type="checkbox" id="toggle-details-4" style="display: none;">
+            <label for="toggle-details-4" class="project-details-button download-cv">
+              Project Details
+            </label>
+            <div id="project-details-content-4" class="project-details-content">
+              <p>This project consisted of creating a database for a fictional company using MySQL, with the goal of managing employees and departments. Throughout the project, essential operations were implemented, such as table creation, data insertion, basic and advanced queries, and updating information, like increasing salaries in a specific department. Techniques for exporting and importing data to and from Excel files were also addressed, demonstrating the versatility and power of MySQL for managing business databases.</p>
+            </div>
+          </div>
+        
+          <!-- Nueva Tarjeta Data Science -->
+          <div class="card">
+            <div class="card__img" style="background-image: url('/img/Agenda_Contactos.png');"></div>
+            <div class="card__title">
+              <h2>Contact List</h2>
+            </div>
+            <div class="card__proyect-links">
+              <a href="https://www.example.com" target="_blank">
+                <i class="fas fa-globe-americas"></i>
+              </a>
+              <a href="https://github.com/juanjp30/Contact-List" target="_blank">
+                <i class="fab fa-github"></i>
+              </a>
+            </div>
+            <input type="checkbox" id="toggle-details-new-data-science" style="display: none;">
+            <label for="toggle-details-new-data-science" class="project-details-button download-cv">
+              Project Details
+            </label>
+            <div id="project-details-content-new-data-science" class="project-details-content">
+              <p>This project involved the creation of a contact agenda using a simple database that included basic information such as name, phone number, and email. The contacts were managed in a tabular format, facilitating the organization and access to personal information through tools like Excel and Python programming. The goal was to optimize the storage and manipulation of personal data to improve efficiency in querying and managing contact information.</p>
+            </div>
+          </div>
+        </div>
+        
+    
+        <!-- Sección de Automatización -->
+        <div class="portfolio-automation">
+          <h3>Automation</h3>
+          <!-- Tarjeta Automatización -->
+          <div class="card">
+            <div class="card__img" style="background-image: url('/img/actuador.png');"></div>
+            <div class="card__title">
+              <h2>Air Flow Control</h2>
+            </div>
+            <div class="card__proyect-links">
+              <a href="https://www.example.com" target="_blank">
+                <i class="fas fa-globe-americas"></i>
+              </a>
+              <a href="https://github.com/juanjp30/Air-Flow-Control" target="_blank">
+                <i class="fab fa-github"></i>
+              </a>
+            </div>
+            <input type="checkbox" id="toggle-details-5" style="display: none;">
+            <label for="toggle-details-5" class="project-details-button download-cv">
+              Project Details
+            </label>
+            <div id="project-details-content-5" class="project-details-content">
+              <p>This project focused on the forward and backward control of multiple pneumatic cylinders, simulated in FluidSIM software and controlled by a PLC, in order to follow a predefined sequence. The goal was to optimize the operation of the cylinders in a controlled environment, improving the precision and efficiency of automated processes.</p>
+            </div>
+          </div>
+        
+          <!-- Nueva Tarjeta Automation -->
+          <div class="card">
+            <div class="card__img" style="background-image: url('/img/Planta_Trofeos.png');"></div>
+            <div class="card__title">
+              <h2>Trophy Factory</h2>
+            </div>
+            <div class="card__proyect-links">
+              <a href="https://www.example.com" target="_blank">
+                <i class="fas fa-globe-americas"></i>
+              </a>
+              <a href="https://github.com/juanjp30/Trophy-Factory" target="_blank">
+                <i class="fab fa-github"></i>
+              </a>
+            </div>
+            <input type="checkbox" id="toggle-details-new-automation" style="display: none;">
+            <label for="toggle-details-new-automation" class="project-details-button download-cv">
+              Project Details
+            </label>
+            <div id="project-details-content-new-automation" class="project-details-content">
+              <p>For this project, the simulation of the actuators and sensors in a trophy manufacturing plant was proposed, controlled by a PLC programmed in TIA Portal using subroutines and simulated in FluidSIM. This simulation allowed for an accurate representation of the automation of the production process, optimizing the control and monitoring of the various devices involved.</p>
+            </div>
+          </div>
+        </div>
+        
       </div>
-    </div>
-  
+    </div> 
+      
     <div class="contact-section" id="contact">
       <div class="contact-heading">
         <h2>Get in touch</h2>
         <div class="divider"></div>
       </div>
       <div class="container-contact">
-        <img src="img/foto_portafolio_contact.png" alt="">
+        <img src="/img/foto_portafolio_contact.png" alt="">
         <div class="contact-form">
           <h4>Send me a message...</h4>
           <form action="https://formspree.io/f/mdknrove" method="POST" class="form-group">
